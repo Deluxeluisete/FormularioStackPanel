@@ -1,0 +1,45 @@
+﻿<Window x:Class="FormularioStackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        mc:Ignorable="d"
+        Title="FormularioStackPanel" Height="450" Width="800" MinWidth="350" Icon="./assets/128.ico"  MaxWidth="1000">
+    <StackPanel>
+        <StackPanel Margin="0,10">
+            <StackPanel.Background >
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Green" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock FontSize="16" FontWeight="Bold" Margin="2.5">Nombre</TextBlock>
+            <TextBox Margin="2.5"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="0,20">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Aqua" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock FontSize="16" FontWeight="Bold" Margin="2.5">Dirección</TextBlock>
+            <TextBox Margin="2.5"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="0,0,0,10">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Purple" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock FontSize="16" FontWeight="Bold" Margin="2.5">Correo Electrónico</TextBlock>
+            <TextBox Margin="2.5"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Margin="10" Width="100" FontSize="16">Aceptar</Button>
+            <Button Margin="10" Width="100" FontSize="16">Cancelar</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
